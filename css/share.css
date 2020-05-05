@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+    /* font-size: 0; */
+}
+a{
+  text-decoration: none;
+}
+body{
+   
+    width: 100%;
+    min-width: 1000px;  
+}
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #d0e0e0;   
+}
+.wrapper .header{
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 48px;
+     margin: 0 auto;
+     /* overflow: hidden;    */
+     background-color: #3e4347;
+ 
+}
+ .wrapper .header .top-search{
+  float: left;
+  margin-left: 0;
+  width: 38%;
+  background-image: url('../img/logo0.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 12% 0px;
+  transition: display 0.5s;
+  -webkit-transition: display 0.5s;
+  -moz-transition:display 0.5s;
+  -o-transition: display 0.5s;
+  z-index: 3000;
+}
+
+.header .nav ul #shareme{
+    color: rgb(235, 231, 8);
+  }
+.wrapper .back{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    font-size: 14px;
+    z-index: 1000;
+    transition: bottom 1s ease-out;
+    -webkit-transition: bottom 1s ease-out;
+    -moz-transition:bottom 1s ease-out;
+    -o-transition: bottom 1s ease-out;
+    
+  }
+  .wrapper .back .backtop{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 6;
+    text-align: center;
+    line-height: 44px;
+    opacity: 1;
+    background-image: url('../img/pagetop.png');
+    background-position: contain;
+    background-color: #423939;
+    
+  }
+  .wrapper .back .setComment{
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 6;
+    text-align: center;
+    line-height: 44px;
+    opacity: 1; 
+    background-color: #fff;
+    background: url('../img/comment.png') 0px 0px no-repeat;
+    background-size: 100%;
+  }
+
+.wrapper .headerPic{
+    margin-top: 48px;
+    width: 100%;
+    height: 248px;
+    position: relative;
+    background-color: #d0e0e0;
+    background-image: url('../img/shareBook0.png');
+    background-position: 70% 180%;
+    background-size: 566px 200px;
+    background-repeat: no-repeat;
+    /* border: 1px solid red; */
+}
+.wrapper .headerPic .title{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+
+}
+.wrapper .headerPic .title h2{
+    color: #606060;
+    font-size: 30px;
+}
+.wrapper .headerPic .title h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.saysBox{
+    width:80%;
+    height: 550px;
+    margin:0px auto;
+    box-shadow: 10px 10px 30px #ccc;
+    border-radius: 2px;
+    padding: 20px 15px;
+    position: relative;
+    background: url('../img/saybg.jpg') 0 0 no-repeat;
+    background-size: cover;
+    /* border: 1px solid green; */
+}
+
+.says{
+	width:96%;
+	height: 250px;
+    position: absolute;
+    /* border: 1px solid yellow; */
+}
+.says h1{
+    font-size:18px;
+    color:#A8A8A8;
+    margin-bottom: 5px;
+}
+.says textarea{
+    width:98%;
+    height: 150px;
+    outline: none;
+    resize: none;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    color:#660000;
+    font-size: 16px;
+}
+.says .btn{
+    display: inline-block;
+    width:100px;
+    height: 30px;
+    border:none;
+    cursor: pointer;
+    background: #00CC66;
+    color:white;
+    border-radius: 3px;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition:all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    font-size: 16px;
+}
+.says .setout{
+    position: absolute;
+    right: 120px;
+    bottom: 5px;
+}
+.says .photoes{
+    position: absolute;    
+    right: 10px;
+    bottom: 5px;
+}
+.says .btn:hover{
+    filter:alpha('opaciyt:70');
+    opacity: 0.7;
+}
+.saysBox ul{
+    width:96%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+
+}
+.saysBox li{
+    width:100%;
+    border-bottom: 1px  dotted #ccc;
+    list-style:none;
+    line-height: 20px;
+    font-size: 16px;
+    color:#606060;
+    overflow: hidden;
+    filter: alpha("opacity:0");
+    opacity: 0;
+    margin-top:15px;
+
+}
+.saysBox span{
+    float: right;
+    margin-right: 30px;
+}
+.says .errmsg{
+    font-size: 14px;
+    color:red;
+    font-weight: bold;
+    filter: alpha('opacity:0');
+    opacity:0;
+}
+.saysBox a{
+    font-size: 14px;
+    color:#990000;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.saysBox a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+#floatBox {
+    position: relative;
+    margin: auto;
+    background: #f0f0f0;
+    width: 90%;
+    margin-top: 60px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#floatBox h4{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
+    color: #606060;   
+    /* margin-bottom: 30px; */
+}
+.item {
+    position: absolute;
+    padding: 15px;
+    width: 17%;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #ccc;
+    margin-top: 5px;
+}
+.item:hover{
+    cursor: pointer;
+    box-shadow: 5px 0px 5px #ccc;
+}
+.item p{
+    color: #999;
+    background: #FAFAFA;
+    font-size: 12px;
+}
+.pic {
+    padding: 10px; 
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;    
+}
+ button{
+        position: relative;
+        bottom: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        transform: translateY(10%);
+        cursor: pointer;
+}

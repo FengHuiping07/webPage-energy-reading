@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color:#dde5e1;
+    /* 字体 草书*/
+    font-family: 'Indie Flower', cursive;
+}
+ .close .closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: url('../img/closeBtn.png') 0 0 no-repeat;
+    background-size: cover;
+    z-index: 4;  
+  }
+  .close a:hover{
+      background-position: 0 -31px;
+  }
+.card{
+    width:300px;
+    height:400px;
+    color:#013243;
+    position: absolute;
+    top:48%;
+    left:28%;
+    /* margin-left: -150px; */
+    margin-top:-200px;
+    background-color:#e0e1dc;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.2);
+	box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
+}
+.card:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #BAC1BA;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #92A29C;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+.card .imgBox{
+    width:100%;
+    height:100%;
+    position: relative;
+    transform-origin: left;
+	transition: .7s;
+}
+.card .bark {
+    position: absolute;
+    background: #e0e1dc;
+    width: 100%;
+    height: 96%;
+    opacity: 0;
+    transition: .7s;
+}
+.card .imgBox img {
+   width:100%;
+   height: 96%;
+}
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+.card:hover .bark {
+    opacity: 1;
+    transition: .6s;
+    box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 70px;
+}
+.card .details h4{
+    font-size:26px;
+    line-height:40px;
+    /* text-align: center; */
+    margin-left: 30px;
+    font-family: 'Amatic SC', cursive;
+}
+.card .details .code{
+    width: 180px;
+    height: 210px;
+    background: url('../img/code.png') 30px 10px no-repeat;
+    background-size: contain;
+}
+.card .details .code{
+    width: 100%;
+    height: 200px;
+    margin-left: 10px;
+    opacity:0.8;
+    outline: none;
+    overflow: auto;
+}
+.textBox{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    display: inline-block;
+}
+.textBox h1{
+    font-size: 34px;
+}
+.textBox h4{
+    margin-top: 10px;
+    font-size: 20px;
+}

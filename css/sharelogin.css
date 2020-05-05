@@ -1,0 +1,140 @@
+.wrapper .share-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    
+  }
+  
+  .shareBox {
+    position: fixed;
+    top: 100px;
+    left: 50%; 
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background: white;
+    
+  }
+  .shareBox h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "sy-sans";
+    color: black;
+    margin: 10px auto;
+  }
+  .shareBox .demo {
+    /* height: 280px; */
+    width: 450px;
+    border-top: 2px dashed #cecece;
+    border-radius: 10px;
+    margin: 0px auto;
+  }
+  
+  .shareBox .box {
+    height: 130px;
+    width: 380px;
+    padding: 20px;
+    margin: 2px auto;
+    z-index: 100;
+  }     
+  .shareBox .shareContent-top {
+    width: 380px;
+    height: 25px;
+    border-bottom: 1px solid #cccccc;
+  }      
+  
+  .shareBox  span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #84c017;
+    text-indent: 0.5em;
+  }
+  .shareBox .shareContent-top a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('../img/closeBtn.png') 0px 0px no-repeat;
+    float: right;
+    margin-top: -5px;
+  
+    /* margin-bottom: 10px; */
+  }
+  .shareBox .shareContent-top a:hover {
+    
+      background-position: 0 -31px;
+  
+  }
+  .shareBox .box .loginBox{
+    width: 380px;
+    height: 180px;
+    background: url('../img/code.png') center center no-repeat;
+    background-size: 40% ;
+    margin-top: 5px;
+    
+  }
+
+  .shareBox .shareContent ul{
+   
+    margin-left:30px; 
+    border: 1px solid #cccccc;
+   margin-top: 5px;
+  }
+  .shareBox .shareContent ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+  } 
+  .shareBox .shareContent ul li a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin-left: 11px;
+    margin-top: 12px;
+    transition: all 0.3s ease-in-out;
+  } 
+  .shareBox .shareContent ul li:hover a {
+    margin-top: 2px;
+  }
+  .shareBox .shareContent ul li:hover span {
+    opacity: 0.2;
+  }
+  .shareBox .shareContent ul li .share1 {
+    background: url('../img/sharePic.png') 0px 0px no-repeat;
+  }
+  .shareBox .shareContent ul li .share2 {
+    background: url('../img/sharePic.png') -28px 0px no-repeat;
+  } 
+  .shareBox .shareContent ul li .share3 {
+    background: url('../img/sharePic.png') -56px 0px no-repeat;
+  } 
+  .shareBox .shareContent ul li .share4 {
+    background: url('../img/weixin.png') -2px -2px no-repeat;
+  } 
+  .shareBox .shareContent ul li .share5 {
+    background: url('../img/sharePic.png') -112px 0px no-repeat;
+  }  
+  .shareBox .shareContent ul li .share6 {
+    background: url('../img/gitPic.png') 0px 0px no-repeat;
+  } 
+  .shareBox .shareContent ul li span {
+    display: block;
+    width: 40px;
+    height: 10px;
+    background: url('../img/share_shade.png') 0px 0px no-repeat;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    transition: all 0.3s ease-in-out;
+  } 
+  .shareBox .shareContent {
+    height: 120px;
+    width: 360px;
+    padding-top: 20px;
+  }

@@ -1,0 +1,127 @@
+.header .small-btn{
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    z-index: 10;
+    background:url('../img/small-btn.png') 0 0 no-repeat;
+    background-size: 100%; 
+    display: none;
+    cursor: pointer;
+  }
+  .header .top-search{
+    /* float: left; */
+    margin-left: 0;
+    width: 38%;
+    background-image: url('../img/logo0.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 12% 0px;
+    transition: display 0.5s;
+    z-index: 3000;
+  }
+  .header .top-search form{
+    position: relative;
+    width: 50%;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+    background-color: #262a2d;
+    margin-left: 40%;
+    margin-top: 10px;
+    border-radius: 10px;
+  
+    
+  }
+  .header .top-search form input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    /* overflow: hidden; */
+    padding-left: 15px;
+    color: white;
+  }
+  .header .top-search form .go{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 26px;
+    height: 26px;
+    background: url('../img/search.png') 0px 5px no-repeat;
+    background-size: 70%;
+    
+  }
+  .header .nav{
+      display: block;
+      /* width: 40%; */
+      margin-left: 40%;
+  
+
+  
+  }
+  /* 媒体查询响应手机端菜菜单栏 */
+  @media only screen and (max-width: 1000px){
+    /* 头部导航栏消失 */
+    .header #firstPage-nav{
+      display: none;
+    }
+    .header #firstPage-top{
+      width: 90%;
+      margin: 0 auto;
+    }
+    #firstPage-btn{
+      display: block;
+    }
+  }
+  
+  
+  .header .nav ul{
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+  }
+  .header .nav ul li{
+    float: left;
+     margin-top: 10px;
+      margin-right: 40px;
+      padding: 3px 5px;
+     
+  }
+  .header .nav ul li a{
+  
+      color: rgba(255,255,255,.85);
+      font-size: 14px;
+      /* opacity: 0.5; */
+  }
+
+.header .nav ul li:hover{
+    background-color: #000;
+    border-radius: 15px;
+  }
+
+  
+  .now-nav{
+    position: absolute;
+    top:48px;
+    right:0;
+    height:300px;
+    flex-direction: column;
+    display: block;
+    background-color: rgba(0, 0, 0);
+    padding: 50px;
+   
+  }
+  .now-nav>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  
+  }
+  .now-nav>ul>li>a{
+    color:#eee;
+  }

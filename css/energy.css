@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+  }
+  html,body{
+    width:100%;
+    height: 100%;
+    min-width: 1000px;
+    background-color:#DB4D6D;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+  .wrapper{
+      position: relative;
+      margin: 0 auto;
+      width: 100%; 
+      height: 100%; 
+  }
+  .wrapper .header{
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 48px;
+     margin: 0 auto;
+     /* overflow: hidden; */
+     background-color: #3e4347;
+ 
+}
+
+ .wrapper .header .top-search{
+  float: left;
+  margin-left: 0;
+  width: 38%;
+  background-image: url('../img/logo0.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 12% 0px;
+  transition: display 0.5s;
+  -webkit-transition: display 0.5s;
+  -moz-transition: display 0.5s;
+  -o-transition: display 0.5s;
+
+  z-index: 3000;
+}
+  .header .nav ul #energyPage{
+    color: rgb(235, 231, 8);
+  } 
+  .wrapper .content {
+    width:100%;
+    height: 110%;
+    background-color:#DB4D6D;
+    opacity: 0.6;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+.textPage {
+  width: 400px;
+  margin-top:4px;
+  opacity: 0.5;
+  color: white;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+.monster {
+  width:110px;
+  height: 100px;
+  background-color:#e55A54;
+  border-radius:20px;
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+  flex-direction: column;
+  box-shadow:0px 10px 20px rgba(0, 0, 0, 0.2);
+  animation: jumping 0.8s infinite alternate;
+  -moz-animation: jumping 0.8s infinite alternate;
+  -webkit-animation:  jumping 0.8s infinite alternate;
+  -o-animation:  jumping 0.8s infinite alternate;
+}
+.monster .eye {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monster .eyeball {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: #0C4475;
+  animation: eyemove 1.6s infinite alternate;
+  -moz-animation:  eyemove 1.6s infinite alternate;
+  -webkit-animation:  eyemove 1.6s infinite alternate;
+  -o-animation:   eyemove 1.6s infinite alternate;
+
+}
+.monster .mouth {
+  width: 32%;
+  height: 12px;
+  border-radius: 12px;
+  background-color: white;
+  margin-top: 15%;
+}
+/* monster 头顶的小角角 */
+.monster:before,
+.monster:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.monster:before {
+  transform: translateX(-70%) rotate(45deg);
+}
+
+.monster:after {
+  transform: translateX(-30%) rotate(-45deg);
+}
+
+.monster.blue {
+  background-color: #0C4475;
+  animation-delay: 0.5s;
+}
+
+.monster.blue .mouth,
+.monster.blue .eyeball {
+  background-color: #E55A54;
+}
+
+@keyframes jumping {
+  50% {
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    top: -50px;
+    box-shadow: 0px 120px 50px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes eyemove {
+  0%,
+  10% {
+    transform: translate(50%);
+  }
+  90%,
+  100% {
+    transform: translate(-50%);
+  }
+}
+h2{
+  color: white;
+  font-size: 40px;
+  margin-right: 50px;
+}
+
+.textPage {
+  margin-top:4px;
+  opacity: 0.5;
+  color: white;
+  font-size: 20px;
+}
+.pageLoading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(231, 219, 105);
+  /* opacity: 0.6; */
+  flex-direction: column;
+  transition: opacity 0.5s 0.5s;
+  -webkit-transition: opacity 0.5s 0.5s;
+  -moz-transition: opacity 0.5s 0.5s;
+  -o-transition: opacity 0.5s 0.5s;
+}
+.pageLoading h3{
+  margin-bottom: 70px;
+  font-size: 30px;
+  color: white;
+  opacity: 0.8;
+  color: #000;
+  
+}
+.pageLoading.complete {
+  opacity: 0;
+}
+.pageLoading.complete .monster {
+  transition: 0.5s;
+  transform: scale(0.01) rotate(360deg);
+}
+.loading {
+  width: 300px;
+  height: 8px;
+  margin-top: 80px;
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.loading .bar {
+  background-color: #E55A54;
+  width: 0%;
+  height: 100%;
+}
+
